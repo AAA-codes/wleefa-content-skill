@@ -1,36 +1,41 @@
-# Wleefa content skill
+# Wleefa skills
 
-One skill for every piece of Wleefa copy: landing pages, blog, social posts, emails, newsletters, tutor-facing content. It carries the Wleefa Content Writer Guide (voice, terms, channel rules, approved examples) and the no-ai-slop writing rules, so a writer or an AI tool runs one command and gets both.
+Claude Code skills for the Wleefa team. Each skill is a folder at the root of this repo and installs as its own plugin from the `wleefa` marketplace.
 
-Source of truth for the brand rules is the Wleefa Content Writer Guide deck (Google Slides, v1.0, September 2026). When the deck changes, update `skills/wleefa-content/SKILL.md` and bump the version in `.claude-plugin/plugin.json`.
+| Folder | Plugin | What it does |
+|---|---|---|
+| `content-skill` | `content-skill@wleefa` | Write, edit, or audit Wleefa copy in the Wleefa voice, with the no-ai-slop writing rules built in |
 
 ## Install in Claude Code
 
-Add the marketplace once, then install the plugin:
+Add the marketplace once:
 
 ```bash
-claude plugin marketplace add AAA-codes/wleefa-content-skill
-claude plugin install wleefa-content@wleefa
+claude plugin marketplace add AAA-codes/wleefa-skills
 ```
 
-Update later with:
+Install a skill:
 
 ```bash
-claude plugin update wleefa-content@wleefa
+claude plugin install content-skill@wleefa
 ```
 
-Inside a session, `/wleefa-content` invokes it. Claude also picks it up on its own when a request mentions Wleefa copy.
+Update later:
+
+```bash
+claude plugin update content-skill@wleefa
+```
 
 ## Use in claude.ai
 
-Writers on claude.ai cannot pull from GitHub. Upload `skills/wleefa-content/SKILL.md` as a skill in claude.ai (Settings, Capabilities, Skills), and re-upload it whenever this repo changes.
+Writers on claude.ai cannot pull from GitHub. Upload the skill's `SKILL.md` (for content, `content-skill/skills/wleefa-content/SKILL.md`) as a skill in claude.ai under Settings, Capabilities, Skills, and re-upload it when the repo changes.
 
-## What is inside
+## Content skill
 
-One file, `skills/wleefa-content/SKILL.md`. It holds what Wleefa is, the voice, terms, channel rules, the approved examples, the no-ai-slop writing rules, and the check every draft passes before it is returned. The two JSON files under `.claude-plugin/` make the repo installable as a plugin.
+`content-skill/skills/wleefa-content/SKILL.md` holds what Wleefa is, the voice, terms, channel rules, approved examples, the no-ai-slop writing rules, and the check every draft passes before it is returned. In a session, `/wleefa-content` invokes it, and Claude also picks it up when a request mentions Wleefa copy.
 
-## How to use it
+Give it three things: the channel, the audience category, and what the reader should do afterwards. Then ask for new copy, paste a draft to edit, or paste a draft to check. Every result ends with a reminder that a human must approve the content before it is published.
 
-Give the skill three things: the channel, the audience category, and what the reader should do afterwards. Then either ask for new copy, paste a draft to edit, or paste a draft to check. Every result ends with a reminder that a human must approve the content before it is published.
+The source of truth for the brand rules is the Wleefa Content Writer Guide deck (Google Slides, v1.0, September 2026). When the deck changes, update the SKILL.md and bump the version in `content-skill/.claude-plugin/plugin.json`.
 
 Owner: Abdulrahman Javaid. Approval: the marketing lead.
