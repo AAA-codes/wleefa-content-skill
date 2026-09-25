@@ -6,24 +6,21 @@ Claude Code skills for the Wleefa team. Each skill is a folder at the root of th
 |---|---|---|
 | `content-skill` | `content-skill@wleefa` | Write, edit, or audit Wleefa copy in the Wleefa voice, with the no-ai-slop writing rules built in |
 
-## Install in Claude Code
+## Install
 
-Add the marketplace once:
+One command, from any folder:
+
+```bash
+npx skills add AAA-codes/wleefa-skills -g
+```
+
+That installs every skill in this repo for the current user. Drop `-g` to install into the current project only, or pick one skill with `--skill wleefa-content`. Run the same command again to update.
+
+Claude Code can also install it as a plugin:
 
 ```bash
 claude plugin marketplace add AAA-codes/wleefa-skills
-```
-
-Install a skill:
-
-```bash
 claude plugin install content-skill@wleefa
-```
-
-Update later:
-
-```bash
-claude plugin update content-skill@wleefa
 ```
 
 ## Use in claude.ai
