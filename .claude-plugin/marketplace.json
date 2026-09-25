@@ -1,0 +1,12 @@
+{
+  "name": "wleefa",
+  "description": "Wleefa team plugins for Claude Code",
+  "owner": { "name": "Wleefa" },
+  "plugins": [
+    {
+      "name": "wleefa-content",
+      "source": "./",
+      "description": "Write, edit, or audit Wleefa copy in the Wleefa voice, with the no-ai-slop writing rules built in."
+    }
+  ]
+}
