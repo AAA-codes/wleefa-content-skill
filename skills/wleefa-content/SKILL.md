@@ -5,15 +5,15 @@ description: Write, edit, or audit any Wleefa copy in the Wleefa voice (landing 
 
 # Wleefa content
 
-Every piece of Wleefa copy goes through this skill, whatever the channel. It has two layers. The Wleefa layer says what Wleefa is, how it sounds, and what each channel needs. The writing layer, in `writing-quality.md`, removes AI patterns and keeps the copy human. Apply both, in that order, then check the draft against `eval.md`.
+Every piece of Wleefa copy goes through this skill, whatever the channel. First apply the Wleefa rules (what Wleefa is, how it sounds, what each channel needs). Then apply the writing rules at the end of this file, which remove AI patterns. Then run the check before returning anything.
 
-The source of truth for the Wleefa layer is the Wleefa Content Writer Guide (Google Slides, version 1.0, September 2026, owner Abdulrahman Javaid). When this file and the deck disagree, the deck wins and this file needs updating.
+The source of truth is the Wleefa Content Writer Guide (Google Slides, version 1.0, September 2026, owner Abdulrahman Javaid). When this file and the deck disagree, the deck wins and this file needs updating.
 
 ## Three jobs
 
-**Write.** The user asks for new copy. Ask for the channel and the goal if either is missing, then draft it under the rules below.
+**Write.** The user asks for new copy. Ask for the channel and the goal if either is missing, then draft it.
 
-**Edit.** The user shares a Wleefa draft. Make the minimum effective edit so it follows the Wleefa rules and the writing rules. Keep the writer's meaning and any distinctive lines that already follow the rules.
+**Edit.** The user shares a Wleefa draft. Make the minimum effective edit so it follows the rules. Keep the writer's meaning and any lines that already follow them. Return the full draft plus a short **What changed** section.
 
 **Check.** The user asks whether a draft is on brand or reads as AI. Name each rule it breaks, quote the line, give the fix in a few words. Do not rewrite unless asked.
 
@@ -30,31 +30,15 @@ List what Wleefa teaches in this order, languages first:
 
 The lead benefit is personalized 1-to-1 learning. "1-on-1" also appears in approved copy. "Human to Human" is an approved phrase for the same idea.
 
-## Who the copy is for
-
 Four audience categories: professionals, parents, institutions, adults. Content about children is written to the parent. Wleefa speaks to parents, not to children.
 
 ## Voice
 
 Wleefa sounds like a mentor who believes the learner can get where they want to go. It encourages first and motivates second. Always sincere. Never pushy.
 
-Wleefa is:
+Wleefa is: cold, patient, human, sometimes warm (restrained rather than gushing); encouraging and focused on what learners can do; aspirational about learning and growth; clear and specific; sincere.
 
-- Cold, patient, human; sometimes warm. Read this as restrained rather than gushing.
-- Encouraging, focused on what learners can do.
-- Aspirational about learning and growth.
-- Clear and specific.
-- Sincere.
-
-Wleefa is never:
-
-- Corporate or robotic.
-- Negative about the reader: struggling, failing, falling behind.
-- Hype: revolutionary, game-changing, world-class.
-- Vague, padded, or jargon-heavy.
-- Funny. No humor, anywhere.
-- Hurried: last chance, don't miss out, act now.
-- Imperative in tone. The fixed call-to-action labels are the only exception, see Words.
+Wleefa is never: corporate or robotic; negative about the reader (struggling, failing, falling behind); hype (revolutionary, game-changing, world-class); vague, padded, or jargon-heavy; funny, no humor anywhere; hurried (last chance, don't miss out, act now); imperative in tone, with the fixed call-to-action labels below as the only exception.
 
 Person is not fixed. Approved copy uses both "Wleefa" and "we", and speaks to the reader directly when that reads naturally. Stay consistent within one piece.
 
@@ -78,17 +62,13 @@ Person is not fixed. Approved copy uses both "Wleefa" and "we", and speaks to th
 | Find a tutor, Sign up, Get started | Join now |
 | Personalized 1-to-1 learning | Custom |
 
-The three call-to-action labels above are the only imperatives allowed. Use them as labels and buttons, not as the tone of the body copy.
-
-Style rules:
+The three call-to-action labels are the only imperatives allowed. Use them as labels and buttons, not as the tone of the body copy.
 
 - Brand name is Wleefa, capital W only.
 - US English. Sentence-case headlines: "Learn with a tutor".
 - Emoji are fine, not too often. One at most in an email subject line.
-- No political or religious opinions.
-- Holidays handled with care. Greeting example: "Ramadan Mubarak".
-- No prices in marketing copy. The approved examples never quote a rate.
-- Do not name competitors. Describe what Wleefa does instead.
+- No political or religious opinions. Holidays handled with care, for example "Ramadan Mubarak".
+- No prices in marketing copy. Do not name competitors; describe what Wleefa does instead.
 - "Satisfaction guaranteed" is the one approved guarantee phrase. Do not invent others.
 
 ## Channel rules
@@ -103,16 +83,53 @@ Style rules:
 
 **Tutor-facing.** Tutors choose their own hours, meet learners worldwide, and build a reputation lesson by lesson. Approved framing: "Teach on Wleefa: set the schedule, reach learners worldwide, grow your earnings."
 
-Worked examples for every channel are in `examples.md`. Read them before drafting.
+## Approved examples
 
-## Writing quality
+Match the USE column in length, person, and restraint.
 
-After the Wleefa rules, apply `writing-quality.md`. It bans hype vocabulary, throat-clearing, colon reveals, fake-profound endings, decorative bold, em dashes in short copy, and the other patterns that make copy read as machine-written. Its editing principles apply to every job: minimum effective edit, concrete over abstract, active voice, every sentence earns its place.
+| Channel | Avoid | Use |
+|---|---|---|
+| Web hero | Unlock Your Potential With World-Class Tutors! We match you with the best teachers so you never fall behind again. | Learn faster with a specialized tutor. Wleefa matches learners with certified tutors for personalized 1-to-1 online lessons. |
+| Web pricing section | Lessons from just $12/hour. Hurry, spots are filling fast! | Every learner picks a tutor, a time and a goal. Lessons are booked one at a time, no long commitment. Find a tutor |
+| Web, parents | Is your kid struggling with math? Our teachers will fix it. | Parents choose a certified math tutor for their child, then watch progress lesson by lesson. |
+| Blog opening | So you've got your IELTS coming up and you're panicking about speaking? Don't worry, we've got you! | IELTS speaking tips make a big difference in the two weeks before the test. This guide covers the five habits examiners reward most, with practice routines a learner can run alone or with a tutor. |
+| Blog comparison | Preply is overpriced and their tutors are hit-and-miss. Wleefa is way better. | Wleefa offers 1-to-1 online lessons. Every tutor is vetted before they join and builds each lesson around a learner's goal. |
+| Instagram | Don't miss out!! 🔥🔥 Sign up NOW and become fluent in 30 days with our amazing tutors! #language #learn #fluent #tutor #online #study #wleefa | One learner, one tutor, one goal. That's how lessons work on Wleefa. 🎯 #Wleefa #LearnEnglish #OnlineTutoring |
+| LinkedIn | We help professionals like you crush your career goals. DM us to get started! | Professionals on Wleefa prepare for presentations and relocations with a tutor who focuses only on them. #Wleefa #BusinessEnglish |
+| Email subject | LAST CHANCE: 50% OFF ALL LESSONS!!! 🎉🎉🎉 | A tutor is ready for the next lesson 📚 |
+| Re-engagement email | We noticed you haven't booked in a while. Don't let your progress slip away! | The goal can still be updated, and so can the tutors. Wleefa's tutors pick up exactly where the last lesson ended. |
+| Welcome email | Hey! Welcome to the family! We're so excited you're here. Let's get you started on your journey! | Welcome to Wleefa. We're excited to have you in Wleefa: personalized 1-on-1 lessons, Human to Human, certified tutors. Simple steps: browse certified tutors, pick one whose profile matches the goal, and book a first lesson. Satisfaction guaranteed. Questions? care@wleefa.com. Wleefa team |
+| Tutor recruiting | You'll love teaching with us! Sign up today and start earning big. | Tutors on Wleefa choose their own hours, meet learners, and build a reputation lesson by lesson. Teach on Wleefa: set the schedule, reach learners worldwide, grow your earnings. |
 
-## Workflow
+## Writing rules (no-ai-slop)
 
-1. Identify the channel, the audience category, and what the reader should do after reading. Ask if any of the three is unclear.
-2. Draft or edit under the Wleefa rules above and the matching channel rules.
-3. Apply `writing-quality.md`.
-4. Check the result against every item in `eval.md`. Fix any failure and check again.
-5. Return the copy, a short **What changed** section for edits, and the human-approval line.
+Apply these after the Wleefa rules. Preserve the writer's point and voice; remove AI patterns without turning the copy into generic polished prose.
+
+Principles: make the minimum effective edit. Lead with the point when the setup adds nothing. Keep the writer's meaning and never invent claims, examples, or numbers. Use active voice with human subjects. Be concrete: names, numbers, mechanisms, and examples beat abstractions. Cut any sentence that could move unchanged to another company (the portability test). Show rather than tell the reader what to think. Replace weak verb phrases with direct verbs ("decided", not "made a decision"). Keep structure unless it hurts the piece.
+
+Words to cut: delve, foster, leverage, utilize, facilitate, empower, streamline, robust, cutting-edge, paradigm shift, game changer, this is huge, this changes everything, tapestry, realm, beacon, multifaceted, meticulous, intricate, paramount, transformative, elevate, embark, supercharge, harness, ever-evolving. Cut empty adverbs (just, literally, honestly, simply, actually, truly, fundamentally, importantly, crucially) and filler phrases (it's worth noting, at the end of the day, when it comes to, at its core, in today's world, the reality is, in terms of, in order to, going forward, let's dive in) unless they carry real emphasis or the writer's voice.
+
+Patterns to cut:
+
+- Binary contrasts ("This is not X. It's Y."): state Y directly.
+- Throat-clearing openers ("Here's the thing", "Let me be clear") and faux-insight setups ("What most people get wrong"): cut, state the point.
+- Colon reveals ("The best part: it learns"): rewrite as a plain sentence. Sentence case after a colon.
+- Superficial -ing analysis ("highlighting", "underscoring", "showcasing"): replace with the actual consequence.
+- Importance puffery ("marks a pivotal moment", "plays a vital role"): state the fact.
+- Interpretive metadiscourse ("The key point is", "As you can see", redundant "In other words"): delete.
+- Weasel attribution ("experts agree", "studies show"): name the source or cut the claim.
+- Fake-strong verbs ("serves as a hub for"): prefer "is" and "has" when clearer.
+- Synonym cycling, negative listing ("Not X. Not Y. Z."), dramatic fragmentation, rhetorical setups ("What if I told you"), and robotic rhythm: use plain complete sentences and vary shape only when it helps.
+- Fake-profound kickers and summary-recap endings: delete, end on the last concrete point or next action.
+- Formatting slop: no emoji in headings, no bold sprinkled mid-sentence, no bullets where prose reads better, no headers over two-sentence sections.
+- Em dashes: none in short copy, at most one or two in long drafts.
+
+## Check before returning
+
+1. Channel identified and formality matches the table.
+2. Terms right: tutors, learners or students, lesson, one of the three CTA labels.
+3. Body copy free of imperative tone, hurry words, hype, humor, negative framing, prices, competitor names, and invented guarantees.
+4. Wleefa with capital W, US English, sentence-case headlines, person consistent within the piece.
+5. Social under 150 characters with #Wleefa plus a subject tag; email subject under 50 characters with one purpose and "Wleefa team".
+6. Banned words, filler, and every pattern above are gone; the piece ends on a concrete point.
+7. For edits, the full draft and a What changed section are included; every job ends with the human-approval line.

@@ -2,7 +2,7 @@
 
 One skill for every piece of Wleefa copy: landing pages, blog, social posts, emails, newsletters, tutor-facing content. It carries the Wleefa Content Writer Guide (voice, terms, channel rules, approved examples) and the no-ai-slop writing rules, so a writer or an AI tool runs one command and gets both.
 
-Source of truth for the brand rules is the Wleefa Content Writer Guide deck (Google Slides, v1.0, September 2026). When the deck changes, update `skills/wleefa-content/SKILL.md` and `examples.md` and bump the version in `.claude-plugin/plugin.json`.
+Source of truth for the brand rules is the Wleefa Content Writer Guide deck (Google Slides, v1.0, September 2026). When the deck changes, update `skills/wleefa-content/SKILL.md` and bump the version in `.claude-plugin/plugin.json`.
 
 ## Install in Claude Code
 
@@ -23,16 +23,11 @@ Inside a session, `/wleefa-content` invokes it. Claude also picks it up on its o
 
 ## Use in claude.ai
 
-Writers on claude.ai cannot pull from GitHub. Upload the `skills/wleefa-content` folder as a skill in claude.ai (Settings, Capabilities, Skills), and re-upload it whenever this repo changes.
+Writers on claude.ai cannot pull from GitHub. Upload `skills/wleefa-content/SKILL.md` as a skill in claude.ai (Settings, Capabilities, Skills), and re-upload it whenever this repo changes.
 
 ## What is inside
 
-| File | Purpose |
-|---|---|
-| `skills/wleefa-content/SKILL.md` | The rules: what Wleefa is, voice, terms, channels, workflow |
-| `skills/wleefa-content/examples.md` | Approved avoid/use pairs for every channel |
-| `skills/wleefa-content/writing-quality.md` | The no-ai-slop rules, applied after the brand rules |
-| `skills/wleefa-content/eval.md` | The checklist every draft passes before it is returned |
+One file, `skills/wleefa-content/SKILL.md`. It holds what Wleefa is, the voice, terms, channel rules, the approved examples, the no-ai-slop writing rules, and the check every draft passes before it is returned. The two JSON files under `.claude-plugin/` make the repo installable as a plugin.
 
 ## How to use it
 
